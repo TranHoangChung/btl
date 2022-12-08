@@ -46,7 +46,7 @@
         <div class="container-fluid">
         <div class="row">
                 <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 ">
-                  <p>460 West 34th Street, 15th floor, New York  -  Hotline: 804-377-3580 - 804-399-3580</p>
+                  <p>18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội  -  Hotline: 123-456-789</p>
                 </div>
                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 ">
                   <div class="header__actions">
@@ -79,17 +79,7 @@
                   </li>
                   <li class="menu-item"><a href="#">Women</a></li>
                   <li class="menu-item"><a href="#">Kids</a></li>
-                  <li class="menu-item menu-item-has-children dropdown"><a href="#">News</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item menu-item-has-children dropdown"><a href="blog-grid.php">Blog-grid</a>
-                                <ul class="sub-menu">
-                                  <li class="menu-item"><a href="blog-grid.php">Blog Grid 1</a></li>
-                                  <li class="menu-item"><a href="blog-grid-2.php">Blog Grid 2</a></li>
-                                </ul>
-                          </li>
-                          <li class="menu-item"><a href="blog-list.php">Blog List</a></li>
-                        </ul>
-                  </li>
+                  
                   <li class="menu-item menu-item-has-children dropdown"><a href="contact-us.php">Contact</a>
                   </li>
                 </ul>
@@ -174,7 +164,7 @@
                         <h3 class="ps-widget__title">Address Office 1</h3>
                       </header>
                       <footer>
-                        <p><strong>460 West 34th Street, 15th floor, New York</strong></p>
+                        <p><strong>18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội</strong></p>
                         <p>Email: <a href='mailto:support@store.com'>support@store.com</a></p>
                         <p>Phone: +323 32434 5334</p>
                         <p>Fax: ++323 32434 5333</p>

@@ -78,7 +78,7 @@
         <div class="container-fluid">
           <div class="row">
                 <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 ">
-                  <p>460 West 34th Street, 15th floor, New York  -  Hotline: 804-377-3580 - 804-399-3580</p>
+                  <p>18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội  -  Hotline: 123-456-789</p>
                 </div>
                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 ">
                   <div class="header__actions">
@@ -99,21 +99,11 @@
                 <ul class="main-menu menu">
                   <li class="menu-item menu-item-has-children dropdown"><a href="index.php">Home</a>
                   </li>
-                  <li class="menu-item menu-item-has-children has-mega-menu"><a href="#">Men</a>
+                  <li class="menu-item menu-item-has-children has-mega-menu"><a href="#prd" >Men</a>
                   </li>
-                  <li class="menu-item"><a href="#">Women</a></li>
-                  <li class="menu-item"><a href="#">Kids</a></li>
-                  <li class="menu-item menu-item-has-children dropdown"><a href="#">News</a>
-                        <ul class="sub-menu">
-                          <li class="menu-item menu-item-has-children dropdown"><a href="blog-grid.php">Blog-grid</a>
-                                <ul class="sub-menu">
-                                  <li class="menu-item"><a href="blog-grid.php">Blog Grid 1</a></li>
-                                  <li class="menu-item"><a href="blog-grid-2.php">Blog Grid 2</a></li>
-                                </ul>
-                          </li>
-                          <li class="menu-item"><a href="blog-list.php">Blog List</a></li>
-                        </ul>
-                  </li>
+                  <li class="menu-item"><a href="#prd">Women</a></li>
+                  <li class="menu-item"><a href="#prd">Kids</a></li>
+                  
                   <li class="menu-item menu-item-has-children dropdown"><a href="contact-us.php">Contact</a>
                   </li>
                 </ul>
@@ -167,17 +157,17 @@
           </ul>
         </div>
       </div>
-      <div class="ps-section--features-product ps-section masonry-root pt-100 pb-100">
+      <div class="ps-section--features-product ps-section masonry-root pt-100 pb-100" id="prd">
         <div class="ps-container">
           <div class="ps-section__header mb-50">
             <h3 class="ps-section__title" data-mask="features">- Features Products</h3>
             <ul class="ps-masonry__filter">
               <li class="current"><a href="#" data-filter="*">All <sup><?php  echo $shoeRepository->countShoeByCategoryName('');?></sup></a></li>
-              <li><a href="#" data-filter=".nike">Nike <sup><?php  echo $shoeRepository->countShoeByCategoryName('nike');?></sup></a></li>
-              <li><a href="#" data-filter=".adidas">Adidas <sup><?php  echo $shoeRepository->countShoeByCategoryName('adidas');?></sup></a></li>
-              <li><a href="#" data-filter=".men">Men <sup><?php  echo $shoeRepository->countShoeByCategoryName('men');?></sup></a></li>
-              <li><a href="#" data-filter=".women">Women <sup><?php  echo $shoeRepository->countShoeByCategoryName('women');?></sup></a></li>
-              <li><a href="#" data-filter=".kids">Kids <sup><?php  echo $shoeRepository->countShoeByCategoryName('kids');?></sup></a></li>
+              <li><a href="#" data-filter=".Nike">Nike <sup><?php  echo $shoeRepository->countShoeByCategoryName('Nike');?></sup></a></li>
+              <li><a href="#" data-filter=".Adidas">Adidas <sup><?php  echo $shoeRepository->countShoeByCategoryName('Adidas');?></sup></a></li>
+              <li><a href="#" data-filter=".Men">Men <sup><?php  echo $shoeRepository->countShoeByCategoryName('Men');?></sup></a></li>
+              <li><a href="#" data-filter=".Women">Women <sup><?php  echo $shoeRepository->countShoeByCategoryName('Women');?></sup></a></li>
+              <li><a href="#" data-filter=".Kids">Kids <sup><?php  echo $shoeRepository->countShoeByCategoryName('Kids');?></sup></a></li>
             </ul>
           </div>
           <div class="ps-section__content pb-50">
@@ -491,7 +481,7 @@
                         <h3 class="ps-widget__title">Address Office 1</h3>
                       </header>
                       <footer>
-                        <p><strong>460 West 34th Street, 15th floor, New York</strong></p>
+                        <p><strong>18 P. Viên, Đông Ngạc, Bắc Từ Liêm, Hà Nội</strong></p>
                         <p>Email: <a href='mailto:support@store.com'>support@store.com</a></p>
                         <p>Phone: +323 32434 5334</p>
                         <p>Fax: ++323 32434 5333</p>
@@ -564,7 +554,7 @@
           <div class="ps-container">
             <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
-                    <p>&copy; <a href="#">SKYTHEMES</a>, Inc. All rights Resevered. Design by <a href="#"> Alena Studio</a></p>
+                    <p>&copy; <a href="#">SKYTHEMES</a>, Inc. All rights Resevered. Design by <a href="#"> Tên Sinh Viên</a></p>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
                     <ul class="ps-social">

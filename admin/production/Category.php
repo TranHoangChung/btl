@@ -1,10 +1,9 @@
 <?php
     require_once("../../backend/filterAdmin.php");
-    require_once("../../repository/orderRepository.php");
-
-    $orderRepository = new OrderRepository();
-
-    $orderList = $orderRepository->getAll();
+    require_once("../../repository/userRepository.php");
+    require_once("../../repository/categoryRepository.php");
+    $categoryRepository = new CategoryRepository();
+    $categoryList = $categoryRepository->getAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,14 +67,16 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Quản Lý <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="shoe.php">Quản Lý Giày</a></li>
+                    <li><a href="shoe.php">Quản Lý Giày</a></li>
                       <li><a href="order.php">Quản Lý Đơn Hàng</a></li>
                       <li><a href="user.php">Quản Lý User</a></li>
                       <li><a href="Category.php">Quản Lý Danh Mục</a></li>
                     </ul>
                   </li>
+                  
                 </ul>
               </div>
+             
             </div>
             <!-- /sidebar menu -->
 
@@ -190,56 +191,23 @@
           </div>
         </div>
         <div class="right_col" role="main">
+        <a class="btn btn-primary" href="addCategory.php" role="button">Thêm Danh Mục</a>
           <table id="tableShoe">
             <tr>
-              <th class="text-center" style="min-width:50px">STT</th>
-              <th class="text-center" style="min-width:150px">Tên Khách Hàng</th>
-              <th class="text-center" style="min-width:150px">Địa Chỉ</th>
-              <th class="text-center" style="min-width:150px">Tên Giày</th>
-              <th class="text-center" style="min-width:50px">Giá Giày</th>
-              <th class="text-center" style="min-width:100px">Kích Cỡ</th>
-              <th class="text-center" style="min-width:100px">Màu</th>
-              <th class="text-center" style="min-width:100px">Ngày Đặt Hàng</th>
+              <th class="text-center" style="min-width:150px">ID</th>
+              <th class="text-center" style="min-width:150px">Name</th>
               <th class="text-center" style="min-width:100px"> </th>
               <th class="text-center" style="min-width:100px"> </th>
             </tr>
             <?php
                   $i=1;
-                  foreach($orderList as $order){
+                  foreach($categoryList as $category){
               ?>
             <tr>
-                <td><?php echo $i++; ?></td>
-                <td><?php echo $order['fullname']?></td>
-                <td><?php echo $order['address']?></td>
-                <td><?php echo $order['name']?></td>
-                <td><?php echo ($order['price'] - $order['price']*$order['sale']*0.01)." VND" ?></td>
-                <td><?php echo $order['shoe_size']?></td>
-                <td><?php echo $order['shoe_color']?></td>
-                <td><?php echo $order['date']?></td>
-                <td><?php
-                    if($order['status'] == 2){
-                 ?>
-                 <a class="btn btn-warning" href="acceptOrder.php?id=<?php echo $order['cart_id']?>" role="button">Duyệt Đơn</a>
-                 <?php 
-                    }
-                ?>
-                <?php
-                    if($order['status'] == 3){
-                 ?>
-                 <a class="btn btn-success" href="#" role="button">Đã Duyệt</a>
-                 <?php 
-                    }
-                ?>
-                 </td>
-                <td>
-                <?php
-                    if($order['status'] == 2){
-                 ?>
-                  <a class="btn btn-danger" href="deleteOrder.php?id=<?php echo $order['order_id']?>" role="button" onclick="return confirm('Bạn có muốn hủy đơn không?');">Hủy Đơn</a></td>
-                 <?php 
-                    }
-                ?>
-                   
+                <td><?php echo $category['id']?></td>
+                <td><?php echo $category['name']?></td>
+                <td><a class="btn btn-warning" href="updateCategory.php?id=<?php echo $category['id']?>" role="button">Sửa</a></td>
+                <td><a class="btn btn-danger" href="deleteCategory.php?id=<?php echo $category['id']?>" role="button" onclick="return confirm('Bạn có muốn xóa không?');">Xóa</a></td>
             </tr>
             <?php
                   }

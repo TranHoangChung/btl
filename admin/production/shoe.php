@@ -70,6 +70,7 @@
                     <li><a href="shoe.php">Quản Lý Giày</a></li>
                       <li><a href="order.php">Quản Lý Đơn Hàng</a></li>
                       <li><a href="user.php">Quản Lý User</a></li>
+                      <li><a href="Category.php">Quản Lý Danh Mục</a></li>
                     </ul>
                   </li>
                  
